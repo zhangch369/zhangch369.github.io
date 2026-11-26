@@ -55,22 +55,21 @@
     a:hover { color: #163956; }
     a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
 
-    section {
+    .research {
       margin-top: clamp(2.5rem, 6vw, 3.5rem);
       padding-top: 1.75rem;
       border-top: 1px solid #d4d9de;
     }
 
     h2 {
-      font-size: 1.875rem;
+      font-size: 1.5rem;
       line-height: 1.25;
       letter-spacing: -0.025em;
     }
 
-    .papers { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-    .papers li + li { margin-top: 1.625rem; }
+    .papers { list-style: none; padding: 0; margin: 0.75rem 0 0; }
+    .research section + section { margin-top: 2rem; }
     h3 { font-size: 1.3125rem; line-height: 1.35; text-wrap: balance; }
-    .authors { margin: 0.3rem 0 0; color: #526070; font-size: 0.9375rem; }
     @media (min-width: 48rem) {
       main {
         display: grid;
@@ -80,7 +79,7 @@
         width: min(64rem, calc(100% - 6rem));
       }
 
-      section {
+      .research {
         margin: 0;
         padding: 0 0 0 clamp(2rem, 4vw, 3.5rem);
         border-top: 0;
@@ -95,23 +94,24 @@
       <h1>Chi Zhang | Economics</h1>
       <p class="bio">I am a master’s student at Lingnan College, Sun Yat-sen University. My research interests are urban economics and international trade.</p>
       <address class="contact" aria-label="Contact">
-        <a href="mailto:zhangch369@gmail.com">zhangch369@gmail.com</a>
+        <a href="mailto:zhangch369@mail2.sysu.edu.cn">zhangch369 [at] mail2 [dot] sysu [dot] edu [dot] cn</a>
       </address>
     </header>
 
-    <section aria-labelledby="working-papers">
-      <h2 id="working-papers">Working Papers</h2>
-      <ul class="papers">
-        <li>
-          <h3>Innovation under an Ivory Tower: Evidence from National University Science and Technology Parks in China</h3>
-          <p class="authors">With Bing Li</p>
-        </li>
-        <li>
-          <h3>The Comparative Advantage of Engineers</h3>
-          <p class="authors">With Bing Li and Ting Chen</p>
-        </li>
-      </ul>
-    </section>
+    <div class="research">
+      <section aria-labelledby="working-papers">
+        <h2 id="working-papers">Working Papers</h2>
+        <ul class="papers">
+          <li><h3>Innovation under an Ivory Tower: Evidence from National University Science and Technology Parks in China</h3></li>
+        </ul>
+      </section>
+      <section aria-labelledby="work-in-progress">
+        <h2 id="work-in-progress">Work in Progress</h2>
+        <ul class="papers">
+          <li><h3>The Comparative Advantage of Engineers</h3></li>
+        </ul>
+      </section>
+    </div>
   </main>
 </body>
 </html>
