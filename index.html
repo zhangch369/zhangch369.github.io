@@ -42,8 +42,6 @@
 
     .contact {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.25rem 1.5rem;
       margin: 0;
       font-style: normal;
     }
@@ -73,6 +71,22 @@
     .papers li + li { margin-top: 1.625rem; }
     h3 { font-size: 1.3125rem; line-height: 1.35; text-wrap: balance; }
     .authors { margin: 0.3rem 0 0; color: #526070; font-size: 0.9375rem; }
+    @media (min-width: 48rem) {
+      main {
+        display: grid;
+        grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+        align-items: start;
+        column-gap: clamp(2.5rem, 5vw, 4.5rem);
+        width: min(64rem, calc(100% - 6rem));
+      }
+
+      section {
+        margin: 0;
+        padding: 0 0 0 clamp(2rem, 4vw, 3.5rem);
+        border-top: 0;
+        border-left: 1px solid #d4d9de;
+      }
+    }
   </style>
 </head>
 <body>
@@ -82,7 +96,6 @@
       <p class="bio">I am a graduate student in economics. My research focuses on urban economics, international trade, and innovation.</p>
       <address class="contact" aria-label="Contact">
         <a href="mailto:zhangch369@gmail.com">zhangch369@gmail.com</a>
-        <a href="https://github.com/zhangch369">GitHub</a>
       </address>
     </header>
 
