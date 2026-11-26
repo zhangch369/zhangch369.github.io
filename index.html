@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chi Zhang is a graduate student in economics studying urban economics, international trade, and innovation.">
+  <title>Chi Zhang | Economics</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: #20252c;
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(42rem, calc(100% - 3rem));
+      margin: 0 auto;
+      padding: clamp(3rem, 8vw, 5rem) 0 4rem;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: clamp(2.125rem, 5vw, 2.75rem);
+      letter-spacing: -0.045em;
+      line-height: 1.1;
+    }
+
+    .bio {
+      max-width: 60ch;
+      margin: 1.25rem 0 0.65rem;
+      font-size: 1.0625rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.5rem;
+      margin: 0;
+      font-style: normal;
+    }
+
+    a {
+      padding: 0.25rem 0;
+      color: #245789;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover { color: #163956; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+    section {
+      margin-top: clamp(2.5rem, 6vw, 3.5rem);
+      padding-top: 1.75rem;
+      border-top: 1px solid #d4d9de;
+    }
+
+    h2 {
+      font-size: 1.875rem;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    .papers { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+    .papers li + li { margin-top: 1.625rem; }
+    h3 { font-size: 1.3125rem; line-height: 1.35; text-wrap: balance; }
+    .authors { margin: 0.3rem 0 0; color: #526070; font-size: 0.9375rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Chi Zhang</h1>
+      <p class="bio">I am a graduate student in economics. My research focuses on urban economics, international trade, and innovation.</p>
+      <address class="contact" aria-label="Contact">
+        <a href="mailto:zhangch369@gmail.com">zhangch369@gmail.com</a>
+        <a href="https://github.com/zhangch369">GitHub</a>
+      </address>
+    </header>
+
+    <section aria-labelledby="working-papers">
+      <h2 id="working-papers">Working Papers</h2>
+      <ul class="papers">
+        <li>
+          <h3>Innovation under an Ivory Tower: Evidence from National University Science and Technology Parks in China</h3>
+          <p class="authors">With Bing Li</p>
+        </li>
+        <li>
+          <h3>The Comparative Advantage of Engineers</h3>
+          <p class="authors">With Bing Li and Ting Chen</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
